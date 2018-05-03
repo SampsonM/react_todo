@@ -1,0 +1,80 @@
+.infoOpen {
+  visibility: visible;
+  opacity: 1;
+}
+
+.infoClosed {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.closeInfoButton {
+  position: absolute;
+  top: -10px;
+  left: 8px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #242424;
+  transition-duration: 0.2s;
+}
+
+.closeInfoButton:hover {
+  transform: scale(1.1);
+}
+
+.infoDiv {
+  position: absolute;
+  margin: auto;
+  top: 220px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  width: 800px;
+  transition-duration: 0.1s;
+  transition: all 0.1s ease-in-out;
+  border: 2px solid #3b3b3b;
+  border-radius:2px;
+  background-color: #fff;
+  overflow: scroll;
+}
+
+.infoDiv h2 {
+  margin: 0 0 30px 0;
+  padding: 18px 0;
+  text-align: center;
+  border-radius: 2px 2px 0 0;
+  border-bottom: 2px solid #3b3b3b;
+}
+
+.infoText {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 40px;
+  text-align: left;
+  background-color: #aaaaaa;
+}
+
+.infoDiv h4 {
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+.infoDiv p {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+  .infoDiv {
+    top: 110px;
+    height: 83vh;
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .infoText {
+    padding: 1px 20px;
+  }
+}
+
